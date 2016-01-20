@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.belatrix.apadea" >
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/NoActionBar" >
+        <activity
+            android:name=".LoginActivity"
+            android:screenOrientation="landscape" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".AddUserActivity"
+            android:windowSoftInputMode="adjustResize|stateHidden"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".QuestionActivity"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".ThirdLevelActivity"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".FifthLevelQuestionActivity"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".SixthLevelQuestionActivity"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".UsersListActivity"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name=".UserSessionsActivity"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name=".DetailSessionActivity"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name=".FourthLevelActivity"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name=".ABMUsersActivity"
+            android:screenOrientation="landscape">
+        </activity>
+    </application>
+
+</manifest>

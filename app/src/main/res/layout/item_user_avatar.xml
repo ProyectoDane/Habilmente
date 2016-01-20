@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/userAvatarItem"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+    <ImageView
+        android:layout_width="52dp"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="1dp"
+        android:contentDescription="@string/content_description"
+        android:src="@drawable/avatar_large_shadow"/>
+
+
+    <com.belatrix.apadea.view.RoundedSmallImageView
+        android:id="@+id/userAvatar"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:src="@drawable/default_avatar"
+        android:contentDescription="@string/content_description"/>
+</RelativeLayout>

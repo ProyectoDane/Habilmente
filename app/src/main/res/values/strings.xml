@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">APAdeA</string>
+    <string name="action_settings">Settings</string>
+
+    <string-array name="genders_array">
+        <item>Hombre</item>
+        <item>Mujer</item>
+    </string-array>
+
+    <string name="question">PREGUNTA</string>
+    <string name="level">NIVEL</string>
+    <string name="next_question">SIGUIENTE PREGUNTA</string>
+    <string name="finish">FINALIZAR EVALUACIÓN</string>
+    <string name="before">PREGUNTA ANTERIOR</string>
+    <string name="close_session">cerrar sesión</string>
+
+    <string name="firstLevelFirstQuestion" formatted="false">Es hora de comer algo!! Para comer hay %1$s y %2$s . Que te gustaria elegir para comer?</string>
+    <string name="firstLevelSecondQuestion" formatted="false">Muy bien, es hora de comer!! %1$s solo puede elegir una opción para comer. ¿Cuál pensás que va a elegir? ¿%2$s o %3$s?</string>
+    <string name="firstLevelAlertMessage" formatted="false"> %s prefiere %s </string>
+
+    <string name="secondLevelFirstQuestion" formatted="false">%1$s perdió a su gato. Hay posibilidades que su gato se haya escondido en %2$s o también es posible que haya escondido en %3$s. Vos, donde pensás que puede estar escondido el gato? En %2$s o %3$s?</string>
+    <string name="secondLevelAlertMessage" formatted="false">Esa es una buena idea! Pero %s piensa que el gato esta en %s.</string>
+    <string name="secondLevelSecondQuestion" formatted="false">¿Dónde irá a buscar %s al gato? En %s o en %s?</string>
+
+    <string name="thirdLevelFirstQuestion" formatted="false">Ellas son Ana y Laura.</string>
+    <string name="thirdLevelSecondQuestion">¿Quién sabe lo que hay dentro de la caja?</string>
+
+    <string name="fourthLevelFirstQuestion" formatted="false">Ellas son Laura y Ana.</string>
+    <string name="fourthLevelSecondQuestion">Laura dejó un cepillo en la canasta.</string>
+    <string name="fourthLevelThirdQuestion" formatted="false">Ana agarra el cepillo de la canasta, lo mete en un vaso y se va.</string>
+    <string name="fourthLevelFourthQuestion" formatated="false">Laura vuelve y busca el cepillo. ¿Dónde cree Laura que está su cepillo? ¿Dónde lo va a ir a buscar?</string>
+
+    <string name="fifthLevelFirstQuestion" formatted="false">Juana siempre se burla de María</string>
+    <string name="fifthLevelSecondQuestion" formatted="false">María se cayó andando en skate y se lastimó la pierna</string>
+    <string name="fifthLevelThirdQuestion" formatted="false">Juana le pregunta a María: ¿Te dolió?</string>
+    <string name="fifthLevelFourthQuestion" formatted="false">María le contesta: No me dolió.</string>
+    <string name="fifthLevelFifthQuestion" formatted="false">¿Por qué María dijo eso?</string>
+
+    <string name="sixthLevelFirstQuestion" formatted="false">Juan y María van a hacer un picnic. Juan piensa que va a ser un hermoso día de sol.</string>
+    <string name="sixthLevelSecondQuestion" formatted="false">Juan y María preparan una canasta con comida adentro.</string>
+    <string name="sixthLevelThirdQuestion" formatted="false">Los chicos miran al cielo y ven nubes oscuras.</string>
+    <string name="sixthLevelFourthQuestion" formatted="false">Empieza a llover. La comida se moja.</string>
+    <string name="sixthLevelFifthQuestion" formatted="false">María dice: “es un hermoso día para hacer un picnic”.\n¿Es verdad lo que dice María?\n¿Por qué María dice: “es un hermoso día para hacer un picnic”?</string>
+
+    <string name="content_description">img</string>
+    <string name="no_evaluations">No se registran evaluaciones</string>
+    <string name="no_subjects">No se registran evaluados</string>
+    <string name="no_therapist">No se registran evaluadores</string>
+    <string name="date">FECHA</string>
+    <string name="status">ESTADO</string>
+    <string name="quiz_result">Resultado de la evaluación</string>
+    <string name="correct">Correcto</string>
+    <string name="emergent">Emergente</string>
+    <string name="no_correct">Incorrecto</string>
+    <string name="no_evaluated">Sin evaluar</string>
+    <string name="subject">EVALUADO</string>
+    <string name="subjects">EVALUADOS</string>
+    <string name="therapist">EVALUADOR</string>
+    <string name="therapists">EVALUADORES</string>
+    <string name="init">INICIAR</string>
+    <string name="select_subject">SELECCIONE UN EVALUADO</string>
+    <string name="select_therapist">SELECCIONE UN EVALUADOR</string>
+    <string name="select_level">SELECCIONE UN NIVEL</string>
+    <string name="select_response">Seleccione la respuesta dada por el evaluado</string>
+    <string name="laura">LAURA</string>
+    <string name="ana">ANA</string>
+    <string name="canasta">CANASTA</string>
+    <string name="vaso">VASO</string>
+    <string name="delete_user">Delete User</string>
+    <string name="delete_user_message">¿Está seguro que desea el eliminar el usuario actual?</string>
+    <string name="user_deleted">El usuario fue eliminado correctamente.</string>
+    <string name="add_subject">AGREGAR EVALUADO</string>
+    <string name="add_therapist">AGREGAR EVALUADOR</string>
+    <string name="edit_subject">EDITAR EVALUADO</string>
+    <string name="edit_therapist">EDITAR EVALUADOR</string>
+</resources>

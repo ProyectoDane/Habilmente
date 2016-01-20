@@ -1,0 +1,86 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backrepeat"
+    tools:context="com.belatrix.apadea.DetailSessionActivity">
+    <ImageView
+        android:id="@+id/actionBar"
+        android:layout_width="match_parent"
+        android:layout_height="135dp"
+        android:contentDescription="@string/content_description"
+        android:background="@drawable/actionbar_bg" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="135dp">
+
+        <Button
+            android:layout_width="35dp"
+            android:layout_height="57dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="22dp"
+            android:layout_centerVertical="true"
+            android:background="@drawable/back_btn"
+            android:id="@+id/backButton"
+            android:onClick="back" />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/usersLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="15dp">
+
+        <RelativeLayout
+            android:id="@+id/subjectLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <com.belatrix.apadea.view.RoundedSmallImageView
+                android:id="@+id/subjectAvatar"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:layout_centerHorizontal="true"
+                android:contentDescription="@string/content_description"
+                android:src="@drawable/default_avatar" />
+
+            <TextView
+                android:id="@+id/subjectNameTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/subjectAvatar"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="8dp"
+                android:text="@string/close_session"
+                android:textColor="@android:color/white"
+                android:textSize="12sp" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="105dp"
+        android:text=""
+        android:textColor="@android:color/white"
+        android:textSize="16sp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/scrollView"
+        android:layout_below="@+id/actionBar"
+        android:layout_centerHorizontal="true" >
+
+        <LinearLayout
+            android:id="@+id/containerLayout"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

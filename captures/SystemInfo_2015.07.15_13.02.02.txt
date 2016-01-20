@@ -1,0 +1,37 @@
+Activity Resolver Table:
+  Non-Data Actions:
+      android.intent.action.MAIN:
+        2ea8a2b3 com.belatrix.apadea/.LoginActivity filter 90b3ed3
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.LAUNCHER"
+
+Key Set Manager:
+  [com.belatrix.apadea]
+      Signing KeySets: 25
+
+Packages:
+  Package [com.belatrix.apadea] (18c1c031):
+    userId=10060 gids=[1028, 1015]
+    pkg=Package{8d20070 com.belatrix.apadea}
+    codePath=/data/app/com.belatrix.apadea-1
+    resourcePath=/data/app/com.belatrix.apadea-1
+    legacyNativeLibraryDir=/data/app/com.belatrix.apadea-1/lib
+    primaryCpuAbi=null
+    secondaryCpuAbi=null
+    versionCode=1 targetSdk=21
+    versionName=1.0
+    applicationInfo=ApplicationInfo{42c7fe9 com.belatrix.apadea}
+    flags=[ DEBUGGABLE HAS_CODE ALLOW_CLEAR_USER_DATA ALLOW_BACKUP ]
+    dataDir=/data/data/com.belatrix.apadea
+    supportsScreens=[small, medium, large, xlarge, resizeable, anyDensity]
+    timeStamp=2015-07-15 12:00:33
+    firstInstallTime=2015-07-06 15:22:31
+    lastUpdateTime=2015-07-15 12:00:33
+    signatures=PackageSignatures{9120684 [28c12e6d]}
+    permissionsFixed=true haveGids=true installStatus=1
+    pkgFlags=[ DEBUGGABLE HAS_CODE ALLOW_CLEAR_USER_DATA ALLOW_BACKUP ]
+    User 0:  installed=true hidden=false stopped=false notLaunched=false enabled=0
+    grantedPermissions:
+      android.permission.READ_EXTERNAL_STORAGE
+      android.permission.CAMERA
+      android.permission.WRITE_EXTERNAL_STORAGE
