@@ -1,0 +1,233 @@
+{
+  "situations": {
+    "firstlevel": {
+      "person": [
+        {
+          "name": "Pablo",
+          "picture": "pablo"
+        },
+        {
+          "name": "Maria",
+          "picture": "maria"
+        }
+      ],
+      "object_wanted": [
+        {
+          "name":"Chocolate",
+          "complete_name":"el chocolate",
+          "picture": "chocolate"
+        },
+        {
+          "name":"Galletitas",
+          "complete_name":"las galletitas",
+          "picture": "galletitas"
+        },
+        {
+          "name":"Alfajor",
+          "complete_name":"el alfajor",
+          "picture": "alfajor"
+        }
+      ],
+      "object_alternative": [
+        {
+          "name": "Brócoli",
+          "complete_name":"el brocoli",
+          "picture": "brocoli"
+        },
+        {
+          "name":"Lechuga",
+          "complete_name":"la lechuga",
+          "picture": "lechuga"
+        },
+        {
+          "name":"Fideos",
+          "complete_name":"los fideos",
+          "picture": "fideos"
+        }
+      ]
+    },
+    "secondlevel": {
+      "person": [
+        {
+          "name": "Pablo",
+          "picture": "pablo"
+        },
+        {
+          "name": "Maria",
+          "picture": "maria"
+        }
+      ],
+      "object_wanted": [
+        {
+          "name":"Garage",
+          "complete_name":"el garage",
+          "picture": "garage"
+        },
+        {
+          "name":"Árbol",
+          "complete_name":"el arbol",
+          "picture": "arbol"
+        },
+        {
+          "name":"Habitación",
+          "complete_name":"la habitacion",
+          "picture": "habitacion"
+        }
+      ],
+      "object_alternative": [
+        {
+          "name": "Árbol",
+          "complete_name":"el arbol",
+          "picture": "arbol"
+        },
+        {
+          "name":"Baño",
+          "complete_name":"el banio",
+          "picture": "banio"
+        },
+        {
+          "name":"Jardin",
+          "complete_name":"el jardin",
+          "picture": "jardin"
+        }
+      ]
+    },
+    "thirdlevel": {
+      "person": [
+        {
+          "name": "Ana",
+          "picture": "ana"
+        },
+        {
+          "name": "Laura",
+          "picture": "laura"
+        }
+      ],
+      "object_wanted": [
+        {
+          "name":"Caja",
+          "complete_name":"la caja",
+          "picture": "caja"
+        },
+        {
+          "name":"Árbol",
+          "complete_name":"el arbol",
+          "picture": "arbol"
+        },
+        {
+          "name":"Habitación",
+          "complete_name":"la habitacion",
+          "picture": "habitacion"
+        }
+      ],
+      "object_alternative": [
+        {
+          "name": "Perro",
+          "complete_name":"el perro",
+          "picture": "perro"
+        },
+        {
+          "name":"Baño",
+          "complete_name":"el banio",
+          "picture": "banio"
+        },
+        {
+          "name":"Jardin",
+          "complete_name":"el jardin",
+          "picture": "jardin"
+        }
+      ]
+    },
+    "fourthlevel": {
+      "person": [
+        {
+          "name": "Laura",
+          "picture": "laura"
+        },
+        {
+          "name": "Ana",
+          "picture": "ana"
+        }
+      ],
+      "object_wanted": [
+        {
+          "name":"Caja",
+          "complete_name":"la caja",
+          "picture": "caja_abierta"
+        },
+        {
+          "name":"Caja",
+          "complete_name":"la caja",
+          "picture": "arbol"
+        },
+        {
+          "name":"Habitación",
+          "complete_name":"la habitacion",
+          "picture": "habitacion"
+        }
+      ],
+      "object_alternative": [
+        {
+          "name": "auto",
+          "complete_name":"auto",
+          "picture": "auto"
+        },
+        {
+          "name":"banio",
+          "complete_name":"el banio",
+          "picture": "banio"
+        },
+        {
+          "name":"Jardin",
+          "complete_name":"el jardin",
+          "picture": "jardin"
+        }
+      ]
+    },
+
+    "fifthlevel": {
+      "scenario": [
+        {
+          "scenario_name":"burlarse de alguien",
+          "first_statement": "siempre se burla de",
+          "second_statement":"se cayó andando en rollers",
+          "third_statement":" ¿Te dolió?",
+          "fourth_statement": "NO",
+          "fifth_statement": "¿Por qué no le dolió?",
+          "left_person_name": "Juana",
+          "left_person_picture": "juana",
+          "right_person_name": "Maria",
+          "right_person_picture": "skate1"
+        },
+        {
+          "scenario_name":"prestar dinero a alguien",
+          "first_statement": " siempre le devuelve el dinero prestado a",
+          "second_statement":" necesita dinero porque no tiene",
+          "third_statement":" ¿ Me prestás dinero?",
+          "fourth_statement":"SI",
+          "left_person_name": "Pablo",
+          "left_person_picture": "pablo",
+          "right_person_name": "Maria",
+          "right_person_picture": "maria"
+        }
+      ]
+    },
+
+    "sixthlevel": {
+      "scenario": [
+        {
+          "scenario_name":"ir de picnic",
+          "first_statement": "es un hermoso dia para hacer un picnic",
+          "second_statement":"¿es verdad lo que dice Maria?",
+          "third_statement":"¿por qué Maria dice: 'es un hermoso dia para hacer un picnic'?",
+          "fourth_statement": "¿Maria se puso contenta cuando se puso a llover?",
+          "fifth_statement": "",
+          "left_person_name": "Pablo",
+          "left_person_picture": "pablo",
+          "right_person_name": "Maria",
+          "right_person_picture": "maria"
+        }
+      ]
+    }
+  }
+}

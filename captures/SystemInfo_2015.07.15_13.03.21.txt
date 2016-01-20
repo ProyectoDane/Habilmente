@@ -1,0 +1,66 @@
+TASK com.belatrix.apadea id=30
+  ACTIVITY com.belatrix.apadea/.LoginActivity 2d21a46e pid=24914
+    Local Activity 1836b9aa State:
+      mResumed=true mStopped=false mFinished=false
+      mLoadersStarted=true
+      mChangingConfigurations=false
+      mCurrentConfig={1.0 310mcc260mnc en_US ldltr sw384dp w598dp h359dp 320dpi nrml land finger qwerty/v/v dpad/v s.15}
+    FragmentManager misc state:
+      mActivity=com.belatrix.apadea.LoginActivity@1836b9aa
+      mContainer=android.app.Activity$1@3f5b099b
+      mCurState=5 mStateSaved=false mDestroyed=false
+    ViewRoot:
+      mAdded=true mRemoved=false
+      mConsumeBatchedInputScheduled=false
+      mConsumeBatchedInputImmediatelyScheduled=false
+      mPendingInputEventCount=0
+      mProcessInputEventsScheduled=false
+      mTraversalScheduled=false
+      android.view.ViewRootImpl$NativePreImeInputStage: mQueueLength=0
+      android.view.ViewRootImpl$ImeInputStage: mQueueLength=0
+      android.view.ViewRootImpl$NativePostImeInputStage: mQueueLength=0
+    Choreographer:
+      mFrameScheduled=false
+      mLastFrameTime=6543599 (6927 ms ago)
+    View Hierarchy:
+      com.android.internal.policy.impl.PhoneWindow$DecorView{3f928138 V.E..... R....... 0,0-1196,768}
+        android.widget.LinearLayout{1e104511 V.E..... ........ 0,0-1196,768}
+          android.view.ViewStub{3e1ec676 G.E..... ......I. 0,0-0,0 #102036e}
+          android.widget.FrameLayout{8d6a477 V.ED.... ........ 0,0-1196,768 #1020002 android:id/content}
+            android.widget.RelativeLayout{148a78e4 V.E..... ........ 0,0-1196,768}
+              android.widget.Button{1423214d VFED..C. ........ 1076,60-1136,120 #7f0b003a app:id/addUserBtn}
+              android.widget.ImageView{15a8d402 V.ED.... ........ 518,0-678,80}
+              android.widget.RelativeLayout{25071113 V.E..... ........ 338,200-858,245 #7f0b003b app:id/titlesLayout}
+                android.widget.TextView{32e83f50 V.ED.... ........ 0,0-200,45}
+                android.widget.TextView{380d8549 V.ED.... ........ 320,0-520,45}
+              android.widget.RelativeLayout{1bd42e4e V.E..... ........ 358,305-838,509 #7f0b003c app:id/relativeLayout2}
+                android.widget.ImageView{1dc7ab6f V.ED.... ........ 0,0-170,170 #7f0b003d app:id/imageView4}
+                com.belatrix.apadea.view.RoundedLargeImageView{b1a007c V.ED.... ........ 0,0-160,160 #7f0b003e app:id/evaluadoLargeAvatar}
+                android.widget.TextView{2202d05 V.ED.... ......ID 0,176-0,204 #7f0b001f app:id/evaluadoNameTextView}
+                android.widget.ImageView{c48e15a V.ED.... ........ 310,0-480,170 #7f0b003f app:id/imageView2}
+                com.belatrix.apadea.view.RoundedLargeImageView{154d8f8b V.ED.... ........ 312,0-472,160 #7f0b0040 app:id/terapeutaLargeAvatar}
+                android.widget.TextView{444a868 V.ED.... ......ID 480,176-480,204 #7f0b0022 app:id/terapeutaNameTextView}
+                android.widget.Button{24fb9481 VFED..C. ........ 170,0-210,40 #7f0b0041 app:id/editProfileEvaluadoButton}
+              android.widget.Button{323b926 VFED..C. ........ 838,305-878,345 #7f0b0042 app:id/editProfileTerapeutaButton}
+              android.widget.TextView{12039967 V.ED..C. ........ 498,537-698,608 #7f0b0043 app:id/iniciarTextView}
+              android.widget.RelativeLayout{10efe314 V.E..... ........ 198,595-998,628}
+                android.widget.TextView{2cbf7bd V.ED.... ........ 0,0-252,33}
+                android.widget.TextView{2f8241b2 V.ED.... ........ 540,0-800,33}
+              android.view.View{2c266503 V.ED.... ........ 596,568-600,768 #7f0b0044 app:id/centerGuide}
+              android.widget.HorizontalScrollView{22721c80 VFEDH... ........ 0,638-576,718 #7f0b0045 app:id/scrollViewLeft}
+                android.widget.LinearLayout{3a4552b9 V.ED.... ........ 236,8-340,72 #7f0b0046 app:id/evaluadosLinearLayout}
+                  android.widget.RelativeLayout{22cec6fe V.E...C. ........ 0,0-104,64 #7f0b0061 app:id/userAvatarItem}
+                    android.widget.ImageView{39204e5f V.ED.... ........ 0,2-104,64}
+                    com.belatrix.apadea.view.RoundedSmallImageView{271c80ac V.ED.... ........ 0,0-100,64 #7f0b0062 app:id/userAvatar}
+              android.widget.ImageView{75f6175 V.ED.... ........ 526,626-596,722}
+              android.widget.HorizontalScrollView{8cc550a VFEDH... ........ 620,638-1196,718 #7f0b0047 app:id/scrollViewRight}
+                android.widget.LinearLayout{10a5717b V.ED.... ........ 169,8-407,72 #7f0b0048 app:id/terapeutasLinearLayout}
+                  android.widget.RelativeLayout{3f26fb98 V.E...C. ........ 0,0-104,64 #7f0b0061 app:id/userAvatarItem}
+                    android.widget.ImageView{33d19ff1 V.ED.... ........ 0,2-104,64}
+                    com.belatrix.apadea.view.RoundedSmallImageView{1462b7d6 V.ED.... ........ 0,0-100,64 #7f0b0062 app:id/userAvatar}
+                  android.widget.RelativeLayout{78faa57 V.E...C. ........ 134,0-238,64 #7f0b0061 app:id/userAvatarItem}
+                    android.widget.ImageView{145c3944 V.ED.... ........ 0,2-104,64}
+                    com.belatrix.apadea.view.RoundedSmallImageView{134f4a2d V.ED.... ........ 0,0-100,64 #7f0b0062 app:id/userAvatar}
+              android.widget.ImageView{2d2a7b62 V.ED.... ........ 600,626-670,722 #7f0b0049 app:id/imageView6}
+    Looper (main, tid 1) {3c7a94f3}
+      (Total messages: 0, idling=false, quitting=false)

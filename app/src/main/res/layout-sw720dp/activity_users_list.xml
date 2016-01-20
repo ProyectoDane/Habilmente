@@ -1,0 +1,59 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backrepeat"
+    tools:context="com.belatrix.apadea.UsersListActivity">
+
+    <ImageView
+        android:id="@+id/actionBar"
+        android:layout_width="match_parent"
+        android:layout_height="135dp"
+        android:background="@drawable/actionbar_bg" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="135dp">
+
+        <Button
+            android:layout_width="35dp"
+            android:layout_height="57dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="22dp"
+            android:layout_centerVertical="true"
+            android:onClick="back"
+            android:background="@drawable/back_btn"
+            android:id="@+id/backButton" />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="105dp"
+        android:text="@string/select_subject"
+        android:textColor="@android:color/white"
+        android:textSize="16sp"
+        android:id="@+id/title" />
+
+    <ListView
+        android:layout_below="@+id/actionBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:divider="@color/light_green_text"
+        android:dividerHeight="1px"
+        android:id="@+id/listView"/>
+
+    <Button
+        android:id="@+id/addUserButton"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:background="@drawable/add_btn"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="40dp"
+        android:layout_marginRight="40dp"/>
+
+</RelativeLayout>

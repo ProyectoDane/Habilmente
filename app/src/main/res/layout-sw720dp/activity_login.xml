@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login_bg">
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/belax_logo" />
+    <ImageView
+        android:layout_width="145dp"
+        android:layout_height="80dp"
+        android:src="@drawable/apadea_logo"
+        android:contentDescription="@string/content_description"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/imageView6"
+        android:layout_alignEnd="@+id/imageView6" />
+
+    <RelativeLayout
+        android:id="@+id/titlesLayout"
+        android:layout_width="600dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="200dp">
+
+        <TextView
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/text_bg"
+            android:gravity="center"
+            android:paddingBottom="8dp"
+            android:paddingLeft="24dp"
+            android:paddingRight="24dp"
+            android:paddingTop="8dp"
+            android:text="@string/subject"
+            android:textColor="@color/orange_text"
+            android:textSize="30sp" />
+
+
+        <TextView
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/text_bg"
+            android:gravity="center"
+            android:paddingBottom="8dp"
+            android:paddingLeft="24dp"
+            android:paddingRight="24dp"
+            android:paddingTop="8dp"
+            android:text="@string/therapist"
+            android:textColor="@color/orange_text"
+            android:textSize="30sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout2"
+        android:layout_width="500dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/titlesLayout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp">
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:contentDescription="@string/content_description"
+            android:layout_width="125dp"
+            android:layout_height="125dp"
+            android:layout_alignParentLeft="true"
+            android:src="@drawable/avatar_large_shadow" />
+
+        <com.belatrix.apadea.view.RoundedLargeImageView
+            android:id="@+id/subjectLargeAvatar"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_alignParentLeft="true"
+            android:contentDescription="@string/content_description"
+            android:src="@drawable/default_avatar" />
+
+        <TextView
+            android:id="@+id/subjectNameTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/subjectLargeAvatar"
+            android:layout_marginTop="8dp"
+            android:textColor="@android:color/white"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:layout_width="125dp"
+            android:layout_height="125dp"
+            android:layout_alignParentRight="true"
+            android:contentDescription="@string/content_description"
+            android:src="@drawable/avatar_large_shadow" />
+
+        <com.belatrix.apadea.view.RoundedLargeImageView
+            android:id="@+id/therapistLargeAvatar"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="4dp"
+            android:contentDescription="@string/content_description"
+            android:src="@drawable/default_avatar" />
+
+        <TextView
+            android:id="@+id/therapistNameTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/subjectLargeAvatar"
+            android:layout_marginTop="8dp"
+            android:text=""
+            android:textColor="@android:color/white"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/iniciarTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="210dp"
+        android:background="@drawable/login_btn_selector"
+        android:gravity="center"
+        android:paddingBottom="8dp"
+        android:paddingLeft="24dp"
+        android:onClick="iniciar"
+        android:paddingRight="24dp"
+        android:paddingTop="8dp"
+        android:text="@string/init"
+        android:textColor="@color/green"
+        android:textSize="30sp" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/select_subject"
+        android:textColor="@color/light_green_text"
+        android:textSize="18sp"
+        android:layout_alignRight="@+id/centerGuide"
+        android:layout_marginRight="70dp"
+        android:layout_marginBottom="40dp"
+        android:layout_above="@+id/scrollViewLeft"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:text="@string/select_therapist"
+        android:textColor="@color/light_green_text"
+        android:textSize="18sp"
+        android:layout_alignLeft="@+id/centerGuide"
+        android:layout_above="@+id/scrollViewRight"
+        android:layout_marginLeft="70dp"
+        android:layout_marginBottom="40dp"/>
+
+
+    <View
+        android:id="@+id/centerGuide"
+        android:layout_width="2dp"
+        android:layout_height="300dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+    <HorizontalScrollView
+        android:id="@+id/scrollViewLeft"
+        android:layout_width="540dp"
+        android:layout_height="70dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="54dp"
+        android:layout_marginRight="30dp"
+        android:layout_toLeftOf="@id/centerGuide"
+        android:padding="4dp">
+
+        <LinearLayout
+            android:id="@+id/subjectsLinearLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="right"
+            android:paddingRight="30dp"
+            android:layout_marginLeft="10dp"
+            android:divider="@drawable/vertical_divider"
+            android:dividerPadding="35dp"
+            android:orientation="horizontal"
+            android:showDividers="middle">
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <ImageView
+        android:layout_width="75dp"
+        android:layout_height="84dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="51dp"
+        android:layout_marginLeft="31dp"
+        android:contentDescription="@string/content_description"
+        android:src="@drawable/gradient1_left" />
+
+    <ImageView
+        android:layout_width="75dp"
+        android:layout_height="83dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="51dp"
+        android:layout_toLeftOf="@id/centerGuide"
+        android:contentDescription="@string/content_description"
+        android:src="@drawable/gradient1_right" />
+
+    <HorizontalScrollView
+        android:id="@+id/scrollViewRight"
+        android:layout_width="540dp"
+        android:layout_height="50dp"
+        android:layout_alignBottom="@+id/scrollViewLeft"
+        android:layout_alignEnd="@+id/imageView3"
+        android:layout_alignRight="@+id/imageView3"
+        android:layout_alignTop="@+id/scrollViewLeft"
+        android:layout_marginRight="40dp"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/centerGuide"
+        android:padding="4dp">
+
+        <LinearLayout
+            android:id="@+id/therapistsLinearLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="left"
+            android:paddingLeft="40dp"
+            android:divider="@drawable/vertical_divider"
+            android:dividerPadding="35dp"
+            android:orientation="horizontal"
+            android:showDividers="middle">
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:contentDescription="@string/content_description"
+        android:layout_width="75dp"
+        android:layout_height="84dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="51dp"
+        android:layout_marginRight="31dp"
+        android:src="@drawable/gradient2_right" />
+
+    <ImageView
+        android:layout_width="75dp"
+        android:layout_height="83dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="51dp"
+        android:layout_toRightOf="@id/centerGuide"
+        android:src="@drawable/gradient2_left"
+        android:contentDescription="@string/content_description"
+        android:id="@+id/imageView6" />
+
+    <Button
+        android:id="@+id/listUsersButton"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:background="@drawable/statistics_btn"
+        android:onClick="goToUsersStatistics"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="60dp"
+        android:layout_marginLeft="30dp" />
+
+    <Button
+        android:id="@+id/addPacient"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:background="@drawable/subject_btn"
+        android:onClick="goToUserList"
+        android:layout_alignTop="@+id/listUsersButton"
+        android:layout_toRightOf="@+id/listUsersButton"
+        android:layout_marginLeft="20dp"/>
+
+    <Button
+        android:id="@+id/addTherapist"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginLeft="20dp"
+        android:background="@drawable/therapist_btn"
+        android:onClick="goToUserList"
+        android:layout_alignTop="@+id/addPacient"
+        android:layout_toRightOf="@+id/addPacient"/>
+
+</RelativeLayout>

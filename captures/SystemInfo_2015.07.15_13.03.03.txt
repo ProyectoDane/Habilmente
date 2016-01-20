@@ -1,0 +1,3 @@
+TASK com.belatrix.apadea id=30
+  ACTIVITY com.belatrix.apadea/.LoginActivity 2d21a46e pid=24080
+    Failure while dumping the activity: java.io.IOException: Timeout

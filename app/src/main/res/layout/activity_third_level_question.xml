@@ -1,0 +1,399 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backrepeat">
+
+    <ImageView
+        android:id="@+id/actionBar"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@drawable/actionbar_bg"/>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="95dp"
+        android:padding="10dp">
+
+        <Button
+            android:id="@+id/backButton"
+            android:layout_width="25dp"
+            android:layout_height="43dp"
+            android:layout_centerVertical="true"
+            android:background="@drawable/back_btn"
+            android:onClick="back"/>
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/usersLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="10dp">
+
+        <RelativeLayout
+            android:id="@+id/subjectLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <com.belatrix.apadea.view.RoundedSmallImageView
+                android:id="@+id/subjectAvatar"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:layout_centerHorizontal="true"
+                android:contentDescription="img"
+                android:src="@drawable/default_avatar"/>
+
+            <TextView
+                android:id="@+id/subjectNameTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/subjectAvatar"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="8dp"
+                android:text="cerrar sesión"
+                android:textColor="@android:color/white"
+                android:textSize="9sp"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/therapistLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@id/subjectLayout">
+
+            <com.belatrix.apadea.view.RoundedSmallImageView
+                android:id="@+id/therapistAvatar"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="20dp"
+                android:contentDescription="img"
+                android:src="@drawable/default_avatar"/>
+
+            <TextView
+                android:id="@+id/therapistNameTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/therapistAvatar"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="8dp"
+                android:text="cerrar sesión"
+                android:textColor="@android:color/white"
+                android:textSize="9sp"/>
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:text="TAREA 3"
+        android:textSize="14sp"
+        android:layout_marginTop="80dp"
+        android:textColor="@android:color/white"
+        android:id="@+id/titleTextView"
+        android:layout_centerHorizontal="true"
+        android:gravity="center_horizontal" />
+
+    <RelativeLayout
+        android:id="@+id/firstLevelRelativeLayout"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_below="@+id/actionBar"
+        android:layout_margin="25dp"
+        android:background="@drawable/level_bg"
+        android:clickable="true">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true">
+
+            <TextView
+                android:id="@+id/levelNumberTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="3"
+                android:textColor="@android:color/white"
+                android:textSize="22sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/levelNumberTextView"
+                android:layout_centerHorizontal="true"
+                android:text="TAREA"
+                android:textColor="@color/orange_text"
+                android:textIsSelectable="false"
+                android:textSize="10sp"
+                android:textStyle="bold"/>
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/questionRelativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_alignBottom="@+id/firstLevelRelativeLayout"
+        android:layout_alignTop="@+id/firstLevelRelativeLayout"
+        android:layout_centerHorizontal="true"
+        android:layout_toLeftOf="@+id/totalQuestionsRelativeLayout"
+        android:layout_toRightOf="@+id/firstLevelRelativeLayout"
+        android:background="@drawable/level_bg"
+        android:clickable="true">
+
+        <TextView
+            android:id="@+id/questionContentTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:gravity="center"
+            android:text="Ellas son Ana y Laura"
+            android:textColor="@android:color/white"
+            android:textSize="14sp"
+            android:textStyle="bold"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/totalQuestionsRelativeLayout"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/actionBar"
+        android:layout_margin="25dp"
+        android:background="@drawable/level_bg"
+        android:clickable="true">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true">
+
+            <TextView
+                android:id="@+id/questionNumberTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="1/4"
+                android:textColor="@android:color/white"
+                android:textSize="22sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/questionNumberTextView"
+                android:layout_centerHorizontal="true"
+                android:text="PREGUNTA"
+                android:textColor="@color/orange_text"
+                android:textSize="10sp"
+                android:textStyle="bold"/>
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_margin="20dp"
+        android:id="@+id/centerImageView"
+        android:src="@drawable/ana_y_laura"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/questionRelativeLayout"
+        android:visibility="invisible" />
+
+    <ImageView
+        android:id="@+id/bottomBar"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_marginTop="65dp"
+        android:background="@drawable/bottom_bar"
+        android:layout_below="@+id/centerImageView"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/levels_container"
+        android:id="@+id/centerAnswerRelativeLayout"
+        android:layout_below="@+id/centerImageView"
+        android:layout_alignLeft="@id/centerImageView"
+        android:layout_alignRight="@id/centerImageView"
+        android:visibility="invisible"
+        android:layout_centerHorizontal="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ANA Y LAURA"
+            android:gravity="center"
+            android:textSize="12sp"
+            android:textColor="@color/orange_text"
+            android:id="@+id/centerAnswerTextView"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="20dp">
+
+        <Button
+            android:id="@+id/previousQuestionButton"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_centerVertical="true"
+            android:background="@drawable/previous_btn"
+            android:visibility="invisible"/>
+
+
+        <TextView
+            android:id="@+id/previousQuestionTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/previousQuestionButton"
+            android:text="PREGUNTA ANTERIOR"
+            android:textColor="@android:color/white"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:visibility="invisible"/>
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="20dp">
+
+        <Button
+            android:id="@+id/nextQuestionButton"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/next_btn"
+            android:visibility="visible"/>
+
+        <TextView
+            android:id="@+id/nextQuestionTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:layout_toLeftOf="@+id/nextQuestionButton"
+            android:text="SIGUIENTE PREGUNTA"
+            android:textColor="@android:color/white"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:visibility="visible"/>
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/editCenterAnswerButton"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:background="@drawable/edit_btn"
+        android:visibility="invisible"
+        android:layout_alignTop="@id/centerImageView"
+        android:layout_toRightOf="@+id/centerImageView"/>
+
+    <Button
+        android:id="@+id/zoomCenterAnswerButton"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:background="@drawable/zoom_btn"
+        android:visibility="gone"
+        android:layout_alignBottom="@id/centerImageView"
+        android:layout_toRightOf="@+id/centerImageView"/>
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:id="@+id/leftImageView"
+        android:src="@drawable/ana"
+        android:contentDescription="@string/content_description"
+        android:layout_below="@+id/firstLevelRelativeLayout"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="50dp" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:background="@drawable/levels_container"
+        android:id="@+id/leftAnswerRelativeLayout"
+        android:visibility="visible"
+        android:layout_below="@+id/leftImageView"
+        android:layout_alignLeft="@id/leftImageView"
+        android:layout_alignRight="@id/leftImageView">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ANA"
+            android:gravity="center"
+            android:textSize="12sp"
+            android:textColor="@color/orange_text"
+            android:id="@+id/leftAnswerTextView"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:id="@+id/rightImageView"
+        android:src="@drawable/laura"
+        android:contentDescription="@string/content_description"
+        android:layout_below="@+id/totalQuestionsRelativeLayout"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="50dp"
+        android:layout_marginBottom="10dp" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:background="@drawable/levels_container"
+        android:id="@+id/rightAnswerRelativeLayout"
+        android:visibility="visible"
+        android:layout_below="@+id/rightImageView"
+        android:layout_alignLeft="@+id/rightImageView"
+        android:layout_alignRight="@+id/rightImageView">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="LAURA"
+            android:gravity="center"
+            android:textSize="12sp"
+            android:textColor="@color/orange_text"
+            android:id="@+id/rightAnswerTextView"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:textStyle="bold" />
+    </RelativeLayout>
+</RelativeLayout>

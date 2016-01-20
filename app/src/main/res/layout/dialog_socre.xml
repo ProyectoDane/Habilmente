@@ -1,0 +1,87 @@
+<RelativeLayout
+    android:layout_height="wrap_content"
+    android:layout_width="wrap_content"
+    android:padding="10dp"
+    android:background="@color/green"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:id="@+id/titleLayout"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            android:text="@string/quiz_result"/>
+    </LinearLayout>
+
+    <RadioGroup
+        android:id="@+id/dialogRadioGroup"
+        android:layout_below="@+id/titleLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:text="@string/correct"/>
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:text="@string/emergent"/>
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:text="@string/no_correct"/>
+    </RadioGroup>
+
+<!--    <RelativeLayout
+        android:id="@+id/observationsLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dialogRadioGroup">
+
+        <CheckBox
+            android:id="@+id/dialogCheckbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:id="@+id/observationsEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/dialogCheckbox"
+            android:enabled="false"
+            android:hint="Observaciones"/>
+    </RelativeLayout>-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dialogRadioGroup"
+        android:padding="10dp"
+        android:weightSum="2">
+        <Button
+            android:id="@+id/scoreCancelButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@android:string/cancel"
+            android:textColor="#FFFFFF" />
+        <Button
+            android:id="@+id/scoreOkButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@android:string/ok"
+            android:textColor="#FFFFFF" />
+    </LinearLayout>
+
+</RelativeLayout>

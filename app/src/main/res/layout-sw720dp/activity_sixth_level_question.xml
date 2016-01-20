@@ -1,0 +1,405 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backrepeat">
+
+    <ImageView
+        android:id="@+id/actionBar"
+        android:layout_width="match_parent"
+        android:layout_height="135dp"
+        android:background="@drawable/actionbar_bg"/>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="135dp"
+        android:padding="10dp">
+
+        <Button
+            android:layout_width="35dp"
+            android:layout_height="57dp"
+            android:layout_marginTop="22dp"
+            android:layout_marginLeft="20dp"
+            android:layout_centerVertical="true"
+            android:background="@drawable/back_btn"
+            android:onClick="back"
+            android:id="@+id/backButton" />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/usersLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="15dp">
+
+        <RelativeLayout
+            android:id="@+id/subjectLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <com.belatrix.apadea.view.RoundedSmallImageView
+                android:id="@+id/subjectAvatar"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/default_avatar"
+                android:contentDescription="img" />
+
+            <TextView
+                android:id="@+id/subjectNameTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/subjectAvatar"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="8dp"
+                android:text="cerrar sesión"
+                android:textSize="12sp"
+                android:textColor="@android:color/white" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/therapistLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/subjectLayout"
+            android:layout_marginLeft="15dp">
+
+            <com.belatrix.apadea.view.RoundedSmallImageView
+                android:id="@+id/therapistAvatar"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="20dp"
+                android:src="@drawable/default_avatar"
+                android:contentDescription="img" />
+
+            <TextView
+                android:id="@+id/therapistNameTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/therapistAvatar"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="8dp"
+                android:text="cerrar sesión"
+                android:textSize="12sp"
+                android:textColor="@android:color/white" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="30dp"
+        android:id="@+id/relativeLayout4"
+        android:visibility="invisible">
+
+        <ImageView
+            android:id="@+id/exitBtn"
+            android:layout_width="47dp"
+            android:layout_height="39dp"
+            android:src="@drawable/exit_btn"
+            android:clickable="true"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/exitBtn"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:text="cerrar sesión"
+            android:textSize="12sp"
+            android:textColor="@android:color/white" />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:text="Seleccione la respuesta dada por el subject"
+        android:textSize="16sp"
+        android:layout_marginTop="8dp"
+        android:textColor="@android:color/white"
+        android:id="@+id/titleTextView"
+        android:layout_below="@+id/relativeLayout4"
+        android:layout_centerHorizontal="true"
+        android:gravity="center_horizontal" />
+
+    <RelativeLayout
+        android:id="@+id/firstLevelRelativeLayout"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:background="@drawable/level_bg"
+        android:clickable="true"
+        android:layout_marginTop="47dp"
+        android:layout_below="@+id/actionBar"
+        android:layout_alignRight="@+id/usersLayout">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerInParent="true"
+            android:layout_below="@+id/levelNumberTextView"
+            android:layout_marginLeft="15dp"
+            android:text="NIVEL"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:textColor="@color/orange_text" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="1"
+            android:textSize="50sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"
+            android:id="@+id/levelNumberTextView" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/questionRelativeLayout"
+        android:layout_width="400dp"
+        android:layout_height="211dp"
+        android:background="@drawable/level_bg"
+        android:clickable="true"
+        android:layout_alignTop="@+id/firstLevelRelativeLayout"
+        android:layout_alignBottom="@+id/firstLevelRelativeLayout"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_toLeftOf="@+id/totalQuestionsRelativeLayout"
+        android:layout_toRightOf="@+id/firstLevelRelativeLayout"
+        android:layout_toEndOf="@+id/firstLevelRelativeLayout">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="Pablo y María se van de picnic"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"
+            android:id="@+id/questionContentTextView" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/totalQuestionsRelativeLayout"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:background="@drawable/level_bg"
+        android:clickable="true"
+        android:layout_alignTop="@+id/questionRelativeLayout"
+        android:layout_toLeftOf="@+id/relativeLayout4"
+        android:layout_toStartOf="@+id/relativeLayout4"
+        android:layout_marginRight="72dp"
+        android:layout_marginEnd="72dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="PREGUNTA"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:textColor="@color/orange_text"
+            android:layout_below="@+id/questionNumberTextView"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="1/4"
+            android:textSize="50sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"
+            android:id="@+id/questionNumberTextView" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/bottomBar"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/bottom_bar"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/leftImageViewRelativeLayout" />
+
+
+    <Button
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:background="@drawable/previous_btn"
+        android:id="@+id/previousQuestionButton"
+        android:layout_marginLeft="15dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:visibility="invisible"
+        android:layout_marginBottom="15dp" />
+
+    <Button
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:background="@drawable/next_btn"
+        android:layout_marginRight="15dp"
+        android:id="@+id/nextQuestionButton"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/previousQuestionButton"
+        android:layout_marginBottom="15dp"
+        android:visibility="visible" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="PREGUNTA ANTERIOR"
+        android:textSize="16sp"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        android:id="@+id/previousQuestionTextView"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/previousQuestionButton"
+        android:visibility="invisible"
+        android:layout_marginBottom="36dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SIGUIENTE PREGUNTA"
+        android:textSize="16sp"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        android:id="@+id/nextQuestionTextView"
+        android:layout_alignParentBottom="true"
+        android:layout_toLeftOf="@+id/nextQuestionButton"
+        android:visibility="visible"
+        android:layout_marginBottom="36dp" />
+
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:id="@+id/leftImageView"
+        android:src="@drawable/maria"
+        android:layout_alignLeft="@+id/firstLevelRelativeLayout"
+        android:layout_alignStart="@+id/firstLevelRelativeLayout"
+        android:layout_marginLeft="42dp"
+        android:layout_marginBottom="20dp"
+        android:layout_below="@+id/questionRelativeLayout"
+        android:layout_marginTop="20dp"
+        android:visibility="invisible" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:background="@drawable/levels_container_bg"
+        android:id="@+id/leftImageViewRelativeLayout"
+        android:visibility="invisible"
+        android:layout_below="@+id/leftImageView"
+        android:layout_alignLeft="@+id/leftImageView"
+        android:layout_alignRight="@+id/leftImageView">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="MARIA"
+            android:gravity="center"
+            android:textSize="15sp"
+            android:textColor="@color/orange_text"
+            android:id="@+id/leftImageNameTextView"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:id="@+id/rightImageView"
+        android:src="@drawable/maria"
+        android:layout_marginRight="42dp"
+        android:layout_marginBottom="20dp"
+        android:layout_alignTop="@+id/leftImageView"
+        android:layout_alignRight="@+id/totalQuestionsRelativeLayout"
+        android:layout_marginTop="20dp"
+        android:visibility="invisible" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:background="@drawable/levels_container_bg"
+        android:id="@+id/rightImageViewRelativeLayout"
+        android:visibility="invisible"
+        android:layout_below="@+id/rightImageView"
+        android:layout_alignRight="@+id/rightImageView"
+        android:layout_alignLeft="@+id/rightImageView">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="MARIA"
+            android:gravity="center"
+            android:textSize="15sp"
+            android:textColor="@color/orange_text"
+            android:id="@+id/rightImageNameTextView"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <Button
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:background="@drawable/edit_btn"
+        android:visibility="gone"
+        android:id="@+id/editLeftImageViewButton"
+        android:layout_alignTop="@+id/leftImageView"
+        android:layout_toRightOf="@+id/leftImageView"/>
+
+    <Button
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:background="@drawable/zoom_btn"
+        android:visibility="gone"
+        android:id="@+id/zoomLeftImageViewButton"
+        android:layout_alignBottom="@+id/leftImageView"
+        android:layout_toRightOf="@+id/leftImageView"/>
+    <Button
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:background="@drawable/edit_btn"
+        android:visibility="gone"
+        android:id="@+id/editRightImageViewButton"
+        android:layout_alignTop="@+id/rightImageView"
+        android:layout_toRightOf="@+id/rightImageView"/>
+
+    <Button
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:background="@drawable/zoom_btn"
+        android:visibility="gone"
+        android:id="@+id/zoomRightImageViewButton"
+        android:layout_alignBottom="@+id/rightImageView"
+        android:layout_toRightOf="@+id/rightImageView"/>
+
+    <ImageView
+        android:id="@+id/centerImageView"
+        android:src="@drawable/picnic1"
+        android:layout_width="2800dp"
+        android:layout_height="300dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="130dp"/>
+</RelativeLayout>
