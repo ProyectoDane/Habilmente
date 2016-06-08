@@ -78,10 +78,10 @@ public class FourthLevelActivity extends Activity implements ScoreDialogListener
             public void onClick(View v) {
                 if (mQuestionNumber == 2) {
                     mQuestionTextView.setText(getResources().getString(R.string.fourthLevelFirstQuestion));
-                    mLeftImageView.setImageResource(R.drawable.laura);
-                    mRightImageView.setImageResource(R.drawable.ana);
-                    mLeftAnswerTextView.setText(getResources().getString(R.string.laura));
-                    mRightAnswerTextView.setText(getResources().getString(R.string.ana));
+                    mLeftImageView.setImageResource(R.drawable.ana);
+                    mRightImageView.setImageResource(R.drawable.laura);
+                    mLeftAnswerTextView.setText(getResources().getString(R.string.juan));
+                    mRightAnswerTextView.setText(getResources().getString(R.string.martin));
                     mLeftAnswerLayout.setVisibility(View.VISIBLE);
                     mRightAnswerLayout.setVisibility(View.VISIBLE);
                     mPreviousQuestionButton.setVisibility(View.INVISIBLE);

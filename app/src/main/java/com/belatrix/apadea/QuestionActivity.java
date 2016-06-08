@@ -207,6 +207,12 @@ public class QuestionActivity extends Activity implements ScoreDialogListener.On
         mNextQuestionClickListener = new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
+                mNextQuestionButton.setVisibility(View.INVISIBLE);
+                mNextQuestionTextView.setVisibility(View.INVISIBLE);
+                mPreviousQuestionButton.setVisibility(View.VISIBLE);
+                mPreviousQuestionTextView.setVisibility(View.VISIBLE);
+
                 if (mLevel == 1) {
                     updateToNextQuestionContentFirstLevel(mLeftAnswerTextView.getText().toString(), mCenterAnswerTextView.getText().toString(), mRightAnswerCompleteName);
                 } else if (mLevel == 2) {
@@ -216,10 +222,7 @@ public class QuestionActivity extends Activity implements ScoreDialogListener.On
                 mCurrentQuestion = 2;
                 mQuestionNumberTextView.setText(String.format("%d/2", mCurrentQuestion));
 
-                mNextQuestionButton.setVisibility(View.INVISIBLE);
-                mNextQuestionTextView.setVisibility(View.INVISIBLE);
-                mPreviousQuestionButton.setVisibility(View.VISIBLE);
-                mPreviousQuestionTextView.setVisibility(View.VISIBLE);
+
             }
         };
 
@@ -494,6 +497,8 @@ public class QuestionActivity extends Activity implements ScoreDialogListener.On
         mNextQuestionButton.setBackgroundResource(R.drawable.next_btn);
         mNextQuestionTextView.setOnClickListener(mNextQuestionClickListener);
         mNextQuestionButton.setOnClickListener(mNextQuestionClickListener);
+        mNextQuestionTextView.setVisibility(View.VISIBLE);
+        mNextQuestionButton.setVisibility(View.VISIBLE);
     }
 
     //muestra tarea 1, paso 2
@@ -523,6 +528,9 @@ public class QuestionActivity extends Activity implements ScoreDialogListener.On
 
         mNextQuestionButton.setBackgroundResource(R.drawable.finish_btn);
         mNextQuestionTextView.setText(getResources().getString(R.string.finish));
+
+        mNextQuestionTextView.setVisibility(View.VISIBLE);
+        mNextQuestionButton.setVisibility(View.VISIBLE);
     }
 
     @Override

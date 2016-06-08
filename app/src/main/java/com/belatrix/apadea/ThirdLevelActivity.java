@@ -101,7 +101,7 @@ public class ThirdLevelActivity extends Activity implements ScoreDialogListener.
                     mQuestionNumber = 1;
                     mQuestionNumberTextView.setText(String.format("%d/2",mQuestionNumber));
 
-                    mQuestionTextView.setText(getResources().getString(R.string.thirdLevelFirstQuestion));
+                    mQuestionTextView.setText(getResources().getString(R.string.thirdLevelFirstQuestion).toUpperCase());
 
                     mCenterAnswerRelativeLayout.setVisibility(View.INVISIBLE);
                     mCenterImageView.setVisibility(View.INVISIBLE);

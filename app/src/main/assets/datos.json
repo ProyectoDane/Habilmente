@@ -3,44 +3,44 @@
     "firstlevel": {
       "person": [
         {
-          "name": "Pablo",
+          "name": "PABLO",
           "picture": "pablo"
         },
         {
-          "name": "Maria",
+          "name": "MARIA",
           "picture": "maria"
         }
       ],
       "object_wanted": [
         {
-          "name":"Chocolate",
+          "name": "CHOCOLATE",
           "complete_name":"el chocolate",
           "picture": "chocolate"
         },
         {
-          "name":"Galletitas",
+          "name":"GALLETITAS",
           "complete_name":"las galletitas",
           "picture": "galletitas"
         },
         {
-          "name":"Alfajor",
+          "name":"ALFAJOR",
           "complete_name":"el alfajor",
           "picture": "alfajor"
         }
       ],
       "object_alternative": [
         {
-          "name": "Brócoli",
+          "name": "BROCOLI",
           "complete_name":"el brocoli",
           "picture": "brocoli"
         },
         {
-          "name":"Lechuga",
+          "name":"LECHUGA",
           "complete_name":"la lechuga",
           "picture": "lechuga"
         },
         {
-          "name":"Fideos",
+          "name":"FIDEOS",
           "complete_name":"los fideos",
           "picture": "fideos"
         }
