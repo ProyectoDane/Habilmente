@@ -376,8 +376,11 @@
         android:layout_toLeftOf="@+id/nextQuestionButton"
         android:visibility="invisible"
         android:layout_marginBottom="40dp"
+        android:layout_marginRight="5dp"
         android:layout_alignParentBottom="true"
-        android:textStyle="bold" />
+        android:textStyle="bold"
+        android:textAlignment="textEnd"
+        android:gravity="end" />
 
     <Button
         android:id="@+id/editLeftAnswerButton"

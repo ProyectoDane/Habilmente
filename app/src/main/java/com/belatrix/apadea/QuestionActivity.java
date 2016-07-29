@@ -134,24 +134,7 @@ public class QuestionActivity extends Activity implements ScoreDialogListener.On
         mLeftAnswerRelativeLayout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                mNextQuestionButton.setVisibility(View.VISIBLE);
-                mNextQuestionTextView.setVisibility(View.VISIBLE);
-                if (mCurrentQuestion == 1) {
-
-                    String alertMessage = "";
-
-                    if (mLevel == 1) {
-                        alertMessage = String.format(getString(R.string.firstLevelAlertMessage), mCenterAnswerTextView.getText().toString().toUpperCase(), mRightAnswerCompleteName);
-                    } else if (mLevel == 2) {
-                        alertMessage = String.format(getString(R.string.secondLevelAlertMessage), mCenterAnswerTextView.getText().toString().toUpperCase(), mRightAnswerCompleteName);
-                    }
-
-                    openAlert(alertMessage);
-
-                    mLeftAnswerChoosedFlag = true;
-                    //mCurrentQuestion = 2;
-
-                }
+                firstOptionSelected();
             }
         });
         RelativeLayout mRightAnswerRelativeLayout = (RelativeLayout) findViewById(R.id.rightAnswerRelativeLayout);
@@ -160,24 +143,7 @@ public class QuestionActivity extends Activity implements ScoreDialogListener.On
         mRightAnswerRelativeLayout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                mNextQuestionButton.setVisibility(View.VISIBLE);
-                mNextQuestionTextView.setVisibility(View.VISIBLE);
-                if (mCurrentQuestion == 1) {
-
-
-                    String alertMessage = "";
-                    if (mLevel == 1) {
-                        alertMessage = String.format(getString(R.string.firstLevelAlertMessage), mCenterAnswerTextView.getText().toString().toUpperCase(), mLeftAnswerTextView.getText().toString().toUpperCase());
-                    } else if (mLevel == 2) {
-                        alertMessage = String.format(getString(R.string.secondLevelAlertMessage), mCenterAnswerTextView.getText().toString().toUpperCase(), mLeftAnswerTextView.getText().toString().toUpperCase());
-                    }
-
-                    openAlert(alertMessage);
-
-                    mRightAnswerChoosedFlag = true;
-                    //mCurrentQuestion = 2;
-
-                }
+                secondOptionSelected();
             }
         });
 
@@ -255,9 +221,19 @@ public class QuestionActivity extends Activity implements ScoreDialogListener.On
         mPreviousQuestionTextView.setOnClickListener(mPreviousQuestionClickListener);
 
 
-        mLeftAnswerImageView.setOnClickListener(new ZoomDialogListener(mLeftAnswerImageView, mLeftAnswerTextView));
+        mLeftAnswerImageView.setOnClickListener(new ZoomDialogListener(mLeftAnswerImageView, mLeftAnswerTextView, new ZoomDialogListener.OptionSelectedListener() {
+            @Override
+            public void onOptionSelected() {
+                firstOptionSelected();
+            }
+        }));
         mCenterImageView.setOnClickListener(new ZoomDialogListener(mCenterImageView, mCenterAnswerTextView));
-        mRightAnswerImageView.setOnClickListener(new ZoomDialogListener(mRightAnswerImageView, mRightAnswerTextView));
+        mRightAnswerImageView.setOnClickListener(new ZoomDialogListener(mRightAnswerImageView, mRightAnswerTextView, new ZoomDialogListener.OptionSelectedListener() {
+            @Override
+            public void onOptionSelected() {
+                secondOptionSelected();
+            }
+        }));
 
         mEditLeftAnswerButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -291,6 +267,48 @@ public class QuestionActivity extends Activity implements ScoreDialogListener.On
                 finish();
             }
         });
+    }
+
+    private void firstOptionSelected() {
+        mNextQuestionButton.setVisibility(View.VISIBLE);
+        mNextQuestionTextView.setVisibility(View.VISIBLE);
+        if (mCurrentQuestion == 1) {
+
+            String alertMessage = "";
+
+            if (mLevel == 1) {
+                alertMessage = String.format(getString(R.string.firstLevelAlertMessage), mCenterAnswerTextView.getText().toString().toUpperCase(), mRightAnswerCompleteName);
+            } else if (mLevel == 2) {
+                alertMessage = String.format(getString(R.string.secondLevelAlertMessage), mCenterAnswerTextView.getText().toString().toUpperCase(), mRightAnswerCompleteName);
+            }
+
+            openAlert(alertMessage);
+
+            mLeftAnswerChoosedFlag = true;
+            //mCurrentQuestion = 2;
+
+        }
+    }
+
+    private void secondOptionSelected() {
+        mNextQuestionButton.setVisibility(View.VISIBLE);
+        mNextQuestionTextView.setVisibility(View.VISIBLE);
+        if (mCurrentQuestion == 1) {
+
+
+            String alertMessage = "";
+            if (mLevel == 1) {
+                alertMessage = String.format(getString(R.string.firstLevelAlertMessage), mCenterAnswerTextView.getText().toString().toUpperCase(), mLeftAnswerTextView.getText().toString().toUpperCase());
+            } else if (mLevel == 2) {
+                alertMessage = String.format(getString(R.string.secondLevelAlertMessage), mCenterAnswerTextView.getText().toString().toUpperCase(), mLeftAnswerTextView.getText().toString().toUpperCase());
+            }
+
+            openAlert(alertMessage);
+
+            mRightAnswerChoosedFlag = true;
+            //mCurrentQuestion = 2;
+
+        }
     }
 
     private void initializeDefaultDataPictures() {

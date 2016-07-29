@@ -371,13 +371,15 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerVertical="true"
-            android:layout_marginRight="20dp"
+            android:layout_marginRight="25dp"
             android:layout_toLeftOf="@+id/nextQuestionButton"
             android:text="SIGUIENTE PREGUNTA"
             android:textColor="@android:color/white"
             android:textSize="12sp"
             android:textStyle="bold"
-            android:visibility="invisible"/>
+            android:textAlignment="textEnd"
+            android:gravity="end"
+            android:visibility="visible"/>
     </RelativeLayout>
 
     <Button

@@ -216,7 +216,7 @@
             android:layout_toLeftOf="@+id/centerImageView"
             android:contentDescription="@string/content_description"
             android:scaleType="fitCenter"
-            android:src="@drawable/ana"/>
+            android:src="@drawable/laura"/>
 
         <RelativeLayout
             android:id="@+id/leftImageLayout"
@@ -249,7 +249,7 @@
             android:layout_margin="20dp"
             android:layout_toRightOf="@id/centerImageView"
             android:contentDescription="@string/content_description"
-            android:src="@drawable/laura"/>
+            android:src="@drawable/ana"/>
 
         <RelativeLayout
             android:id="@+id/rightImageLayout"

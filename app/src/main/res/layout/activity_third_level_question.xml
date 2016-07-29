@@ -157,7 +157,7 @@
             android:layout_marginLeft="10dp"
             android:layout_marginRight="10dp"
             android:gravity="center"
-            android:text="Ellas son Ana y Laura"
+            android:text="@string/thirdLevelFirstQuestion"
             android:textColor="@android:color/white"
             android:textSize="14sp"
             android:textStyle="bold"/>
@@ -236,7 +236,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="ANA Y LAURA"
+            android:text="MARTIN Y JUAN"
             android:gravity="center"
             android:textSize="12sp"
             android:textColor="@color/orange_text"

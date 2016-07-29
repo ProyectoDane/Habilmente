@@ -239,7 +239,7 @@
             android:layout_toLeftOf="@+id/centerImageView"
             android:id="@+id/leftImageView"
             android:contentDescription="@string/content_description"
-            android:src="@drawable/juan"
+            android:src="@drawable/laura"
             android:scaleType="fitCenter" />
 
         <ImageView
@@ -247,7 +247,7 @@
             android:layout_height="200dp"
             android:layout_margin="20dp"
             android:id="@+id/rightImageView"
-            android:src="@drawable/martin"
+            android:src="@drawable/ana"
             android:contentDescription="@string/content_description"
             android:layout_toRightOf="@id/centerImageView" />
 
@@ -266,7 +266,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="center"
-                android:text="@string/juan"
+                android:text="LAURA"
                 android:textSize="15sp"
                 android:textColor="@color/orange_text"
                 android:id="@+id/leftAnswerTextView"
@@ -290,7 +290,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="center"
-                android:text="@string/martin"
+                android:text="ANA"
                 android:textSize="15sp"
                 android:textColor="@color/orange_text"
                 android:id="@+id/rightAnswerTextView"
