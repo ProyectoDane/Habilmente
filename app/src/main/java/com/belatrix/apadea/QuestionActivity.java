@@ -5,7 +5,6 @@ import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.res.Resources;
-import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ArrayAdapter;
@@ -340,7 +339,6 @@ public class QuestionActivity extends Activity implements ScoreDialogListener.On
     private void startDialog(final String typeButton) {
         AlertDialog.Builder builderSingle = new AlertDialog.Builder(QuestionActivity.this, AlertDialog.THEME_DEVICE_DEFAULT_DARK);
 
-        builderSingle.setIcon(R.drawable.apadea_logo);
         builderSingle.setTitle("Seleccione una imagen:");
         final ArrayAdapter<String> arrayAdapter = new ArrayAdapter<>(QuestionActivity.this, R.layout.alert_dialog_row);
 
