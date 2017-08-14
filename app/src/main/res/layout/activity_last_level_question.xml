@@ -101,12 +101,10 @@
     <TextView
         android:layout_width="110dp"
         android:layout_height="wrap_content"
-        android:text="Seleccione la respuesta dada por el subject"
-        android:textSize="10sp"
-        android:layout_marginTop="50dp"
+        android:text="Seleccione una respuesta"
         android:textColor="@android:color/white"
         android:id="@+id/titleTextView"
-        android:layout_below="@+id/relativeLayout4"
+        android:layout_below="@+id/usersLayout"
         android:layout_centerHorizontal="true"
         android:gravity="center_horizontal" />
 
